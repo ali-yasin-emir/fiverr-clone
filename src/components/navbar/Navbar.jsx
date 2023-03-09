@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const currentUser = {
     id: 1,
-    username: 'Namık Kemal',
+    username: 'Muharrem İnce',
     isSeller: true,
   };
 
@@ -42,7 +42,10 @@ const Navbar = () => {
           {!currentUser && <button>Join</button>}
           {currentUser && (
             <div className='user' onClick={() => setOpen(!open)}>
-              <img src='https://randomuser.me/api/portraits/men/0.jpg' alt='' />
+              <img
+                src='https://yt3.googleusercontent.com/ytc/AL5GRJWqj5akXp60sVRVXj0niclEjKV61Khi3izq9I0SiQ=s900-c-k-c0x00ffffff-no-rj'
+                alt=''
+              />
               <span>{currentUser?.username}</span>
               {open && (
                 <div className='options'>
